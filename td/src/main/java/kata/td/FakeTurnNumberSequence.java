@@ -19,6 +19,7 @@ public class FakeTurnNumberSequence implements NumberSequence {
 
     @Override
     public int getNextTurnNumber() {
+        this.callsCount++;
         return this.expectedNextTurnNumber;
     }
 }
