@@ -10,6 +10,4 @@ public class NumberSequence {
     {
         return ++turnNumber;
     }
-    // TODO-working-on: Change the interface NumberSequence to be a class to remove the duplicated code in its subclasses
-
 }
