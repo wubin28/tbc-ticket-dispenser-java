@@ -4,6 +4,10 @@ package kata.td;
  * Created by benwu on 14-6-10.
  */
 public class TicketDispenser {
+    public TicketDispenser(NumberSequence numberSequence) {
+        
+    }
+
     public TurnTicket getTurnTicket()
     {
         // TODO: Depending on a static method violates the Dependency Inversion Principle and Open-Closed Principle.
