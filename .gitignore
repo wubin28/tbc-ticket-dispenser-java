@@ -14,3 +14,6 @@ hs_err_pid*
 # IDEA
 .idea/
 *.iml
+
+#logs
+log.txt
