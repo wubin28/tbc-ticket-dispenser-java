@@ -6,7 +6,8 @@ package kata.td;
 public class TurnNumberSequence implements NumberSequence {
     private static int _turnNumber = 0;
 
-    public static int getNextTurnNumber()
+    @Override
+    public int getNextTurnNumber()
     {
         return _turnNumber++;
     }
