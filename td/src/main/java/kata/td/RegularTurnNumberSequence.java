@@ -5,6 +5,6 @@ package kata.td;
  */
 public class RegularTurnNumberSequence extends NumberSequence {
     public RegularTurnNumberSequence(int startingTurnNumber) {
-        super.turnNumber = startingTurnNumber;
+        super(startingTurnNumber);
     }
 }
