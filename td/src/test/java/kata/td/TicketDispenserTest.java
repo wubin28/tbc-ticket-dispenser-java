@@ -53,6 +53,13 @@ public class TicketDispenserTest {
     // TODO-new-feature-working-on: the turn number sequence of the vip customers starts from 1001
     @Test
     public void the_turn_number_sequence_of_the_vip_customers_starts_from_1001() {
+        // Arrange
+        VipTurnNumberSequence vipTurnNumberSequence = new VipTurnNumberSequence(1000);
+        TicketDispenser ticketDispenser = new TicketDispenser(vipTurnNumberSequence);
+
+        // Act
+        TurnTicket ticket = ticketDispenser.getTurnTicket();
+
         // Assert
         assertEquals(1001, ticket.getTurnNumber());
     }
