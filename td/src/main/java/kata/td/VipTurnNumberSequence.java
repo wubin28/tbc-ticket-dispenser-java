@@ -6,6 +6,10 @@ package kata.td;
 public class VipTurnNumberSequence implements NumberSequence {
     private static int turnNumber;
 
+    public VipTurnNumberSequence(int startingTurnNumber) {
+        this.turnNumber = startingTurnNumber;
+    }
+
     @Override
     public int getNextTurnNumber() {
         return ++this.turnNumber;
