@@ -3,7 +3,7 @@ package kata.td;
 /**
  * Created by benwu on 14-6-16.
  */
-public class FakeTurnNumberSequence implements NumberSequence {
+public class FakeTurnNumberSequence extends NumberSequence {
     private int callsCount = 0;
     private int expectedNextTurnNumber;
 
@@ -17,7 +17,6 @@ public class FakeTurnNumberSequence implements NumberSequence {
         }
     }
 
-    @Override
     public int getNextTurnNumber() {
         this.callsCount++;
         return this.expectedNextTurnNumber;
