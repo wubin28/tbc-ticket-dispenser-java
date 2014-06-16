@@ -7,7 +7,7 @@ public class TicketDispenser {
     private NumberSequence numberSequence;
 
     public TicketDispenser() {
-        this(new TurnNumberSequence());
+        this(new NumberSequence());
     }
 
     public TicketDispenser(NumberSequence numberSequence) {
