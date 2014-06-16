@@ -4,19 +4,19 @@ package kata.td;
  * Created by benwu on 14-6-10.
  */
 public class TicketDispenser {
-    private NumberSequence numberSequence;
+    private TurnNumberSequence turnNumberSequence;
 
     public TicketDispenser() {
-        this(new NumberSequence());
+        this(new TurnNumberSequence());
     }
 
-    public TicketDispenser(NumberSequence numberSequence) {
-        this.numberSequence = numberSequence;
+    public TicketDispenser(TurnNumberSequence turnNumberSequence) {
+        this.turnNumberSequence = turnNumberSequence;
     }
 
     public TurnTicket getTurnTicket()
     {
-        int newTurnNumber = this.numberSequence.getNextTurnNumber();
+        int newTurnNumber = this.turnNumberSequence.getNextTurnNumber();
         TurnTicket newTurnTicket = new TurnTicket(newTurnNumber);
 
         return newTurnTicket;

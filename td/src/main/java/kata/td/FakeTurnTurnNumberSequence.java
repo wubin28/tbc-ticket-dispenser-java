@@ -3,7 +3,7 @@ package kata.td;
 /**
  * Created by benwu on 14-6-16.
  */
-public class FakeTurnNumberSequence extends NumberSequence {
+public class FakeTurnTurnNumberSequence extends TurnNumberSequence {
     private int callsCount = 0;
     private int expectedNextTurnNumber;
 

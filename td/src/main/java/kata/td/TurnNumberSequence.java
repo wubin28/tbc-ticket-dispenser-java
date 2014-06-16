@@ -3,13 +3,13 @@ package kata.td;
 /**
  * Created by benwu on 14-6-16.
  */
-public class NumberSequence {
+public class TurnNumberSequence {
     protected static int turnNumber = 0;
 
-    public NumberSequence() {
+    public TurnNumberSequence() {
         this(0);
     }
-    public NumberSequence(int startingTurnNumber) {
+    public TurnNumberSequence(int startingTurnNumber) {
         turnNumber = startingTurnNumber;
     }
 

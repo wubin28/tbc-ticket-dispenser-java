@@ -38,7 +38,7 @@ public class TicketDispenserTest {
     @Test
     public void the_class_TicketDispenser_should_dispense_the_ticket_number_11_if_give_a_turn_number_11_to_it() {
         // Arrange
-        FakeTurnNumberSequence fakeTurnNumberSequence = new FakeTurnNumberSequence();
+        FakeTurnTurnNumberSequence fakeTurnNumberSequence = new FakeTurnTurnNumberSequence();
         fakeTurnNumberSequence.setExpectedNextTurnNumber(11);
         TicketDispenser ticketDispenser = new TicketDispenser(fakeTurnNumberSequence);
 
@@ -53,7 +53,7 @@ public class TicketDispenserTest {
     @Test
     public void the_turn_number_sequence_of_the_vip_customers_starts_from_1001() {
         // Arrange
-        VipTurnNumberSequence vipTurnNumberSequence = new VipTurnNumberSequence(1000);
+        VipTurnTurnNumberSequence vipTurnNumberSequence = new VipTurnTurnNumberSequence(1000);
         TicketDispenser ticketDispenser = new TicketDispenser(vipTurnNumberSequence);
 
         // Act
@@ -66,7 +66,7 @@ public class TicketDispenserTest {
     @Test
     public void the_turn_number_sequence_of_the_regular_customers_starts_from_2001() {
         // Arrange
-        RegularTurnNumberSequence regularTurnNumberSequence = new RegularTurnNumberSequence(2000);
+        RegularTurnTurnNumberSequence regularTurnNumberSequence = new RegularTurnTurnNumberSequence(2000);
         TicketDispenser ticketDispenser = new TicketDispenser(regularTurnNumberSequence);
 
         // Act
