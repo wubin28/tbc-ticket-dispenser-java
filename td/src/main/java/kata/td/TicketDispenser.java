@@ -16,7 +16,7 @@ public class TicketDispenser {
     public TurnTicket getTurnTicket()
     {
         // TODO-working-on: Depending on a static method violates the Dependency Inversion Principle and Open-Closed Principle.
-        int newTurnNumber = TurnNumberSequence.getNextTurnNumber();
+        int newTurnNumber = this.turnNumberSequence.getNextTurnNumber();
         TurnTicket newTurnTicket = new TurnTicket(newTurnNumber);
 
         return newTurnTicket;
