@@ -11,7 +11,6 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
         this.nextTurnNumber = nextTurnNumber;
     }
 
-    // TODO-working-on: Finish the implementation of method MockTurnNumberSequence.verifyMethodGetNextTurnNumberCalledOnce().
     public void verifyMethodGetNextTurnNumberCalledOnce() {
         if (this.callsCount != 1) {
             throw new IllegalStateException("The method getNextTurnNumber() should be called once.");
@@ -20,6 +19,7 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
 
     @Override
     public int getNextTurnNumber() {
+        this.callsCount++;
         return this.nextTurnNumber;
     }
 }
