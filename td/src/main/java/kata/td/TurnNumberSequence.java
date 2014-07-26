@@ -10,6 +10,10 @@ public class TurnNumberSequence {
         this._turnNumber = firstNumber;
     }
 
+    public TurnNumberSequence() {
+        this(0);
+    }
+
     public int getNextTurnNumber()
     {
         return _turnNumber++;
