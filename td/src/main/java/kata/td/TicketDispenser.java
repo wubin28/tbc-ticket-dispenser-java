@@ -4,8 +4,10 @@ package kata.td;
  * Created by benwu on 14-6-10.
  */
 public class TicketDispenser {
-    public TicketDispenser(TurnNumberSequence turnNumberSequence) {
+    private TurnNumberSequence turnNumberSequence;
 
+    public TicketDispenser(TurnNumberSequence turnNumberSequence) {
+        this.turnNumberSequence = turnNumberSequence;
     }
 
     public TicketDispenser() {
