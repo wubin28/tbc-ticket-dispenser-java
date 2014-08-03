@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
  * Created by benwu on 14-6-10.
  */
 public class TicketDispenserTest {
+
     @Test
     public void a_new_ticket_should_have_the_turn_number_subsequent_to_the_previous_ticket() {
         // Arrange
@@ -53,26 +54,26 @@ public class TicketDispenserTest {
     @Test
     public void the_turn_number_sequence_of_the_vip_customers_starts_from_1001() {
         // Arrange
-        TurnNumberSequence vipCustomerTurnNumberSequence = new TurnNumberSequence(1001);
+        TurnNumberSequence vipCustomerTurnNumberSequence = new TurnNumberSequence(TurnNumberSequence.VIP_CUSTOMER_FIRST_NUMBER);
         TicketDispenser vipCustomerTicketDispenser = new TicketDispenser(vipCustomerTurnNumberSequence);
 
         // Act
         TurnTicket ticket = vipCustomerTicketDispenser.getTurnTicket();
 
         // Assert
-        assertEquals(1001, ticket.getTurnNumber());
+        assertEquals(TurnNumberSequence.VIP_CUSTOMER_FIRST_NUMBER, ticket.getTurnNumber());
     }
 
     @Test
     public void the_turn_number_sequence_of_the_regular_customers_starts_from_2001() {
         // Arrange
-        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(2001);
+        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(TurnNumberSequence.REGULAR_CUSTOMER_FIRST_NUMBER);
         TicketDispenser regularCustomerTicketDispenser = new TicketDispenser(regularTurnNumberSequence);
 
         // Act
         TurnTicket ticket = regularCustomerTicketDispenser.getTurnTicket();
 
         // Assert
-        assertEquals(2001, ticket.getTurnNumber());
+        assertEquals(TurnNumberSequence.REGULAR_CUSTOMER_FIRST_NUMBER, ticket.getTurnNumber());
     }
 }
