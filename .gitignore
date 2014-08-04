@@ -17,3 +17,5 @@ hs_err_pid*
 
 # logs
 log.txt
+log-*
+git-log-*
