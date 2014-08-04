@@ -11,7 +11,7 @@ public class TicketDispenser {
     }
 
     public TicketDispenser() {
-
+        this(new TurnNumberSequence());
     }
 
     public TurnTicket getTurnTicket()
