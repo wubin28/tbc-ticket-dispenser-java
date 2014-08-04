@@ -8,6 +8,10 @@ public class TicketDispenser {
 
     }
 
+    public TicketDispenser() {
+
+    }
+
     public TurnTicket getTurnTicket()
     {
         // TODO: Depending on a static method violates the Dependency Inversion Principle and Open-Closed Principle.
