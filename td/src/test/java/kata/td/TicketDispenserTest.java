@@ -51,7 +51,13 @@ public class TicketDispenserTest {
         mockTurnNumberSequence.verifyMethodGetNextTurnNumberCalledOnce();
     }
 
-    // TODO-new-feature: the turn number of VIP customers starts from 1001
+    // TODO-new-feature-working-on: the turn number of VIP customers starts from 1001
+    @Test
+    public void the_turn_number_of_VIP_customers_starts_from_1001() {
+        // Assert
+        assertEquals(1001, firstTicketOfVipCustomer.getTurnNumber());
+    }
+
     // TODO-new-feature: the turn number of regular customers starts from 2001
 }
 
