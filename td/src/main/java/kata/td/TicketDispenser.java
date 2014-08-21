@@ -7,11 +7,11 @@ public class TicketDispenser {
     private TurnNumberSequence turnNumberSequence;
 
     public TicketDispenser(TurnNumberSequence turnNumberSequence) { // Enabling Point
-
+        this.turnNumberSequence = turnNumberSequence;
     }
 
     public TicketDispenser() {
-
+        this(new TurnNumberSequence());
     }
 
     public TurnTicket getTurnTicket()
