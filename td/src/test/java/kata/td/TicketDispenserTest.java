@@ -64,6 +64,17 @@ public class TicketDispenserTest {
         assertEquals(1001, firstTicketOfVipCustomer.getTurnNumber());
     }
 
-    // TODO-new-feature: the turn number of regular customers starts from 2001
+    @Test
+    public void the_turn_number_of_regular_customers_starts_from_2001() {
+        // Arrange
+        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(2001);
+        TicketDispenser regularCustomerTicketDispenser = new TicketDispenser(regularTurnNumberSequence);
+
+        // Act
+        TurnTicket firstTicketOfRegularCustomer = regularCustomerTicketDispenser.getTurnTicket();
+
+        // Assert
+        assertEquals(2001, firstTicketOfRegularCustomer.getTurnNumber());
+    }
 }
 
