@@ -6,7 +6,7 @@ package kata.td;
 public class TicketDispenser {
     private TurnNumberSequence turnNumberSequence;
 
-    public TicketDispenser(TurnNumberSequence turnNumberSequence) {
+    public TicketDispenser(TurnNumberSequence turnNumberSequence) { // Enabling Point
 
     }
 
@@ -17,7 +17,7 @@ public class TicketDispenser {
     public TurnTicket getTurnTicket()
     {
         // TODO-code-smell-working-on: Depending on a static method violates the Dependency Inversion Principle and Open-Closed Principle
-        int newTurnNumber = turnNumberSequence.getNextTurnNumber();
+        int newTurnNumber = turnNumberSequence.getNextTurnNumber(); // Seam
         TurnTicket newTurnTicket = new TurnTicket(newTurnNumber);
 
         return newTurnTicket;
