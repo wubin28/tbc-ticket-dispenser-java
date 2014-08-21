@@ -7,11 +7,11 @@ public class TurnNumberSequence {
     private static int _turnNumber = 0;
 
     public TurnNumberSequence(int startingTurnNumber) {
-
+        this._turnNumber = startingTurnNumber;
     }
 
     public TurnNumberSequence() {
-        
+        this(0);
     }
 
     public int getNextTurnNumber()
