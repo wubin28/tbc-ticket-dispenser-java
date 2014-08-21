@@ -6,6 +6,10 @@ package kata.td;
 public class TurnNumberSequence {
     private static int _turnNumber = 0;
 
+    public TurnNumberSequence(int startingTurnNumber) {
+
+    }
+
     public int getNextTurnNumber()
     {
         return _turnNumber++;
