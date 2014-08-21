@@ -13,3 +13,6 @@ public class TicketDispenserTest {
         assertEquals(5, 2 + 3);
     }
 }
+
+// TODO-new-feature: the turn number of VIP customers starts from 1001
+// TODO-new-feature: the turn number of regular customers starts from 2001
