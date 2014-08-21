@@ -22,7 +22,12 @@ public class TicketDispenserTest {
         assertEquals(1, newTicket.getTurnNumber() - previousTicket.getTurnNumber());
     }
 
-    // TODO-characterization: a new ticket should have the turn number subsequent to the previous ticket from another dispenser
+    // TODO-characterization-working-on: a new ticket should have the turn number subsequent to the previous ticket from another dispenser
+    @Test
+    public void a_new_ticket_should_have_the_turn_number_subsequent_to_the_previous_ticket_from_another_dispenser() {
+        // Assert
+        assertEquals(1, newTicketFromAnotherDispenser.getTurnNumber() - previousTicket.getTurnNumber());
+    }
 
     // TODO-unit-test: the class TicketDispenser should dispense the ticket number 11 if it is given the turn number 11
 
