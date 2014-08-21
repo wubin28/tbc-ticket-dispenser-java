@@ -10,6 +10,10 @@ public class TurnNumberSequence {
 
     }
 
+    public TurnNumberSequence() {
+        
+    }
+
     public int getNextTurnNumber()
     {
         return _turnNumber++;
