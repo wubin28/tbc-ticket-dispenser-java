@@ -17,5 +17,7 @@ public class TicketDispenserTest {
 // TODO-characterization: a new ticket should have the turn number subsequent to the previous ticket
 // TODO-characterization: a new ticket should have the turn number subsequent to the previous ticket from another dispenser
 
+// TODO-unit-test: the class TicketDispenser should dispense the ticket number 11 if it is given the turn number 11
+
 // TODO-new-feature: the turn number of VIP customers starts from 1001
 // TODO-new-feature: the turn number of regular customers starts from 2001
