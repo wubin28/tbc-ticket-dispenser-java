@@ -39,8 +39,17 @@ public class TicketDispenserTest {
     // TODO-unit-test-working-on: the class TicketDispenser should dispense the ticket number 11 if it is given the turn number 11
     @Test
     public void the_class_TicketDispenser_should_dispense_the_ticket_number_11_if_it_is_given_the_turn_number_11() {
+        // Arrange
+        MockTurnNumberSequence mockTurnNumberSequence = new MockTurnNumberSequence();
+        mockTurnNumberSequence.arrangeNextTurnNumber(11);
+        TicketDispenser dispenser = new TicketDispenser(mockTurnNumberSequence);
+
+        // Act
+        TurnTicket ticket = dispenser.getTurnTicket();
+
         // Assert
         assertEquals(11, ticket.getTurnNumber());
+        mockTurnNumberSequence.verifyMethodGetNextTurnNumberCalledOnce();
     }
 
     // TODO-new-feature: the turn number of VIP customers starts from 1001
