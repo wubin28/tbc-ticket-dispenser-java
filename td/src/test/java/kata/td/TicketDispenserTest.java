@@ -14,5 +14,8 @@ public class TicketDispenserTest {
     }
 }
 
+// TODO-characterization: a new ticket should have the turn number subsequent to the previous ticket
+// TODO-characterization: a new ticket should have the turn number subsequent to the previous ticket from another dispenser
+
 // TODO-new-feature: the turn number of VIP customers starts from 1001
 // TODO-new-feature: the turn number of regular customers starts from 2001
