@@ -19,6 +19,7 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
 
     @Override
     public int getNextTurnNumber() {
+        callsCount++;
         return this.nextTurnNumber;
     }
 }
