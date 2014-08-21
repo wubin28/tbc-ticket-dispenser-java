@@ -36,7 +36,12 @@ public class TicketDispenserTest {
         assertEquals(1, newTicketFromAnotherDispenser.getTurnNumber() - previousTicket.getTurnNumber());
     }
 
-    // TODO-unit-test: the class TicketDispenser should dispense the ticket number 11 if it is given the turn number 11
+    // TODO-unit-test-working-on: the class TicketDispenser should dispense the ticket number 11 if it is given the turn number 11
+    @Test
+    public void the_class_TicketDispenser_should_dispense_the_ticket_number_11_if_it_is_given_the_turn_number_11() {
+        // Assert
+        assertEquals(11, ticket.getTurnNumber());
+    }
 
     // TODO-new-feature: the turn number of VIP customers starts from 1001
     // TODO-new-feature: the turn number of regular customers starts from 2001
