@@ -11,4 +11,9 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
     public void verifyMethodGetNextTurnNumberCalledOnce() {
 
     }
+
+    @Override
+    public int getNextTurnNumber() {
+        return this.nextTurnNumber;
+    }
 }
