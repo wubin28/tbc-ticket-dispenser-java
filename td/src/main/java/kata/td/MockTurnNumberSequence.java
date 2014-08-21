@@ -5,6 +5,7 @@ package kata.td;
  */
 public class MockTurnNumberSequence extends TurnNumberSequence {
     private int nextTurnNumber;
+    private int callsCount = 0;
 
     public void arrangeNextTurnNumber(int nextTurnNumber) {
         this.nextTurnNumber = nextTurnNumber;
